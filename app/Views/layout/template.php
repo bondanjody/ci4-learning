@@ -9,8 +9,8 @@
   <body>
     <div style="background-color: tomato; text-align:center; ">
         <h1>Bondan Web</h1>
-        <a href="/">Home</a>
-        <a href="/contact">Contact</a>
+
+        <?= $this->include('layout/navbar') ?>
     </div>
 
     <?= $this->renderSection('content') ?>
