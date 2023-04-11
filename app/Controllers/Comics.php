@@ -6,9 +6,15 @@ use \App\Models\KomikModel;
 
 class Comics extends BaseController
 {
+    protected $komikModel;
+
+    public function __construct()
+    {
+        $this->komikModel = new KomikModel();
+    }
     public function index()
     {
-        $komikModel = new KomikModel();
+        $komik = $this->komikModel->findAll();
 
         $data = [
             'title'=>'Daftar Komik'
