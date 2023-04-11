@@ -4,6 +4,7 @@
 
     <div>
         <h4>Daftar Komik</h4>
+        <?php foreach($komik as $k) : ?>
         <table border="1">
             <tr>
                 <td>Sampul</td>
@@ -12,16 +13,17 @@
             </tr>  
             <tr>
                 <td>
-                    <img src="/images/naruto.jpg" alt="" class="sampul" />
+                    <img src="/images/<?= $k['sampul'] ?>" alt="" class="sampul" />
                 </td>
                 <td>
-                    Naruto
+                    <?= $k['judul'] ?>
                 </td>
                 <td>
                     <a href="#">Detail</a>
                 </td>
             </tr>  
         </table>
+        <?php endforeach; ?>
     </div>
 
 <?= $this->endSection(); ?>

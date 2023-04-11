@@ -17,7 +17,8 @@ class Comics extends BaseController
         $komik = $this->komikModel->findAll();
 
         $data = [
-            'title'=>'Daftar Komik'
+            'title'=>'Daftar Komik',
+            'komik' => $komik
         ];
         return view('komik/index', $data);
     }
