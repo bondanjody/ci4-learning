@@ -8,6 +8,11 @@ class Coba extends BaseController
     {
      echo "Ini controller Coba method index";
     }
+
+    public function about($nama='')
+    {
+        echo "This is about " . $nama;
+    }
 }
 
 ?>

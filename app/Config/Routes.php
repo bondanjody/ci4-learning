@@ -30,7 +30,9 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
-// $routes->get('/coba', 'Coba::index');
+
+// Routes Placeholder
+// $routes->get('/coba/(:any)', 'Coba::about/$data');
 
 // Anonymous Function
 // $routes->get('/coba', function(){
