@@ -34,6 +34,8 @@ $routes->set404Override();
 // Overwrite Home route
 $routes->get('/', 'Pages::index');
 $routes->get('/contact', 'Pages::contact');
+$routes->get('/komik', 'Comics::index');
+
 
 // Routes Placeholder
 // $routes->get('/coba/(:any)', 'Coba::about/$data');
