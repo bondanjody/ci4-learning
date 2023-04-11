@@ -12,7 +12,7 @@
             </tr>  
             <tr>
                 <td>
-                    <img src="/images/naruto.jpg" alt="" width="100" />
+                    <img src="/images/naruto.jpg" alt="" class="sampul" />
                 </td>
                 <td>
                     Naruto
