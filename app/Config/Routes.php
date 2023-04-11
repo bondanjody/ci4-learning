@@ -39,6 +39,9 @@ $routes->get('/', 'Home::index');
 //     echo "Ini halaman Coba.";
 // });
 
+// Mengakses Admin
+$routes->get('/users', 'Admin\Users::index');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
