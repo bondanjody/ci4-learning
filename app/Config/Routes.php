@@ -30,6 +30,7 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
+$routes->get('/contact', 'Pages::contact');
 
 // Routes Placeholder
 // $routes->get('/coba/(:any)', 'Coba::about/$data');
@@ -40,7 +41,8 @@ $routes->get('/', 'Home::index');
 // });
 
 // Mengakses Admin
-$routes->get('/users', 'Admin\Users::index');
+// $routes->get('/users', 'Admin\Users::index');
+
 
 /*
  * --------------------------------------------------------------------
