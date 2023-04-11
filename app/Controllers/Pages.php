@@ -15,7 +15,19 @@ class Pages extends BaseController
     public function contact()
     {
         $data = [
-            'title' => 'Contact | Bondan Web'
+            'title' => 'Contact | Bondan Web',
+            'contact' => [
+                [
+                    'tipe' => 'Rumah',
+                    'alamat' => 'Jalan Manuk',
+                    'kota' => 'Wonogiri'
+                ],
+                [
+                    'tipe' => 'Kantor',
+                    'alamat' => 'Jalan Betutu',
+                    'kota' => 'Wonogiri'
+                ],
+            ]
         ];
         echo view('pages/contact', $data);
     }
